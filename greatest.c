@@ -4,7 +4,6 @@ int main()
    int num1,num2,num3;
    
    printf("\nEnter value of num1, num2 and num3:");
-   //Store input values in variables for comparsion
    scanf("%d %d %d",&num1,&num2,&num3);
 
    if((num1>num2)&&(num1>num3))
