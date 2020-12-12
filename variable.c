@@ -1,14 +1,12 @@
-#include <stdio.h>
-
-int main ()
+#include<stdio.h>
+int main(int argc, char const *argv[])
 {
-    int x,y,z;
-    x = 20;
-    y = 30;
-    z = x + y;
-
-
-    printf ("value of x = %d, y = %d and z = %d\n", x, y, z);
-
-    return 0;
+    int inum=10;
+    float fnum= 10.3;
+    double dnum= 12;
+    long lnum= 39.3;
+    char cname='A';
+    char sname [10]="DIVYANSHU";
+    printf("int =%d,float=%f,double=%lf,long=%ld,char=%c,String=%s",inum,fnum,dnum,lnum,cname,sname);
+     return 0;
 }
