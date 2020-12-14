@@ -11,5 +11,10 @@ int main(int argc, char const *argv[])
     data=getch();
     printf("\nYour password is=");
     putch(data);
+    printf("\nEnter single character= ");
+    data=getche();
+    printf("\nYour character is= ");
+    putch(data);
+
     return 0;
 }
