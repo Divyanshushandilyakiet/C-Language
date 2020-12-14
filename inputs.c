@@ -7,6 +7,9 @@ int main(int argc, char const *argv[])
     printf("Enter any number ");
     scanf("%d",&num);
     printf("your number is=%d",num);
-  
+    printf("\nEnter your password ");
+    data=getch();
+    printf("\nYour password is=");
+    putch(data);
     return 0;
 }
