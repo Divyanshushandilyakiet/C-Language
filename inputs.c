@@ -15,6 +15,10 @@ int main(int argc, char const *argv[])
     data=getche();
     printf("\nYour character is= ");
     putch(data);
+    printf("Enter your name= ");
+    gets(name);
+    printf("your name is= ");
+    puts(name);
 
     return 0;
 }
