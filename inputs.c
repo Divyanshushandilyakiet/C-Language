@@ -19,6 +19,9 @@ int main(int argc, char const *argv[])
     gets(name);
     printf("your name is= ");
     puts(name);
+    printf("Enter your name= ");
+    scanf("%s",name);
+    printf("your name is=%s", name);
 
     return 0;
 }
