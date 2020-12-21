@@ -3,7 +3,7 @@ int main(int argc, char const *argv[])
 {
     
     int day;
-    printf("Emter any day number to find out day name=");
+    printf("Enter any day number to find out day name=");
     scanf("%d",&day);
     switch(day)
     {
