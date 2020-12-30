@@ -22,3 +22,5 @@ int main(int argc, char const *argv[])
         printf("Number3=%d is greater",num3);
     }
     
+    return 0;
+}
