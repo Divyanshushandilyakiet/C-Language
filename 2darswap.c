@@ -18,4 +18,4 @@ printf("Value after swapping using pointer \n");
 printf("Value of A is => %d\n",*p1);
 printf("Value of B is => %d",*p2);
 return 0;
-
+}
