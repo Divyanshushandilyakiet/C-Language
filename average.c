@@ -1,19 +1,18 @@
 #include<stdio.h>
 int main(int argc, char const *argv[])
 {
- int s1,s2,s3,s4;
- int sum,avg;
- printf("enter 4 subject marks is =");
- scanf("%d %d %d %d",&s1,&s2,&s3,&s4);
- sum=s1+s2+s3+s4;
- avg=sum/4;
- if(avg>40)
- {
- printf("student pass");
- }
- else
- {
- printf("student fail");
- }
- return 0;
+    int i,j,sum=0,num;
+    float avg;
+    printf("Enter the number of students in class\n");
+    scanf("%d",&num);
+    int marks[num];
+    printf("Enter the marks of all students");
+    for(i=0;i<num;i++)
+    {
+        scanf("%d",&marks[i]);
+        sum=sum+marks[i];
+    }
+    avg=(float)sum/num;
+    printf("Average of the class is %f\n",avg);
+    return 0;
 }
