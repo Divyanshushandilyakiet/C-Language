@@ -1,19 +1,20 @@
-#include<stdio.h>
-int fact(int);
+// calculate factorials of number
+#include <stdio.h>
+int fact(int n);
 int main(int argc, char const *argv[])
 {
-    int n,f;
-    printf("enter a no");
-    scanf("%d",&n);
-    f=fact(n);
-    printf("the factorial of given no is=%d",f);
+    int a, N;
+    printf("Enter a number==>>");
+    scanf("%d", &N);
+    a = fact(N);
+    printf("\nThe factorial of number is %d ", a);
+
     return 0;
 }
 int fact(int n)
 {
-    if(n<1)
-    {
-    return 1;
-    }
-    return(n*fact(n-1));
+    int f = 1;
+    for (int i = 1; i <= n; i++)
+        f = f * i;
+    return (f);
 }
