@@ -1,21 +1,16 @@
+// print all prime factors of a number
 #include<stdio.h>
 int main(int argc, char const *argv[])
 {
-    int n,a=2,f=0;
-    printf("enter a no");
+    int n,i;
+    printf("Enter a number= ");
     scanf("%d",&n);
-    while(a<n)
-    {
-        if(n%a==0)
-        {
-            f=1;
-            break;
-            }
-            a++;
-}
-    if(f==0)
-    printf("%d is prime",n);
-    else
-    printf("%d is not prime",n);
+
+for(i=2;i>1;i++)
+    while(n%i==0){
+        printf("%d ",i);
+        n=n/i;
+    }
+    
     return 0;
 }
