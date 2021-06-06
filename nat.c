@@ -1,18 +1,13 @@
+// Print n natrual numbers
 #include<stdio.h>
-int sum(int n);
 int main(int argc, char const *argv[])
 {
-    int n,result;
-    printf("enter range of how many natural numbers sum you want");
+    int n,i;
+    printf("Enter a natural number-->");
     scanf("%d",&n);
-    result=sum(n);
-    printf("sum=%d",result);
+    for(i=1;i<=n;i++)
+    {
+        printf("%d ",i);
+    }
     return 0;
-}
-int sum(int n)
-{
-    if(n!=0)
-    return n+sum(n-1);
-    else 
-    return n;
 }
