@@ -1,14 +1,14 @@
-// print N odd natural number in reverse number
+// Print N odd natural numbers
 #include<stdio.h>
 int main(int argc, char const *argv[])
 {
-    int n,i;
-    printf("Enter a number -->");
-    scanf("%d",&n);
+    int N,i;
+    printf("Enter a natural number-->");
+    scanf("%d",&N);
 
-    for(i=n;i>=0;i--)
+    for(i=N;i>=1;i--)
     {
-        printf("%d ",i*2+1);
+        printf("%d ",2*i-1);
     }
     return 0;
 }
