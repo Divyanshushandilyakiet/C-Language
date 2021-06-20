@@ -1,11 +1,11 @@
-#include <stdio.h>
-int main() 
-{  
-    char c;
-    printf("Enter a character: ");
-    scanf("%c", &c);  
-   
-    printf("ASCII value of %c = %d", c, c);
-    
+// Print all the ASCII code 
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+     int n;
+     for(n=0;n<=255;n++)
+     {
+         printf("\n%d=%c",n,n);
+     }
     return 0;
 }
